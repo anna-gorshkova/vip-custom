@@ -1158,13 +1158,17 @@
 .vip-filter,
 .vip-zaslonka,
 .vip-pds,
-.vip-filter {
+.vip-filter,
+.vip-valve,
+.vip-pump,
+.vip-thermostat,
+.vip-leak {
 	width: auto!important;
     height: auto !important;
     background: none !important;	
 }
 
- /* Fan */
+ /* FAN */
 
 @keyframes vip-fan-rotate {
     from {
@@ -1191,7 +1195,7 @@
     fill: var(--clr-error);
   }
 
-/* Zaslonka */
+/* ZASLONKA */
 
 .vip-zaslonka_closed path,
 .vip-zaslonka_closed .zaslonka_img rect{
@@ -1207,7 +1211,7 @@
     transform: rotate(90deg);
 }
 
-/* Pressure drop */
+/* PRESSURE DROP */
 .vip-pds {
 	pointer-events: none;
 }
@@ -1240,7 +1244,7 @@
 }
 
 
-/* Filter */
+/* FILTER */
 
 .vip-filter.vip-filter_error .line {
     fill: url(#red_filter_gradient);
@@ -1257,4 +1261,72 @@
 .vip-filter.vip-filter_error .filter_border_lines rect,
 .vip-filter.vip-filter_error .filter_icon_img path {
     fill: var(--clr-error);
+}
+
+/* VALVE to regulate temperature */
+
+.vip-valve.vip-valve_closed .reg_tempY_img path,
+.vip-valve.vip-valve_closed .reg_tempY_img rect{
+    fill: var(--clr-noactive);
+}
+
+.vip-valve.vip-valve_closed .reg-tempY_border {
+    stroke: var(--clr-noactive);
+}
+
+.vip-valve.vip-valve_closed .reg_tempY_zasl{
+    transform-origin: 5.5px center;
+    fill: var(--clr-noactive);
+	transform: rotate(90deg);
+}
+
+
+.vip-valve.vip-valve_half .reg_tempY_zasl{
+    transform-origin: 5.5px center;
+    transform: rotate(-45deg);
+}
+
+/* PUMP */
+
+.vip-pump.vip-pump_error .vip-pump_stroke path,
+.vip-pump.vip-pump_error .vip-pump_stroke rect {
+    stroke: var(--clr-error);
+}
+
+.vip-pump.vip-pump_error .vip-pump_fill path,
+.vip-pump.vip-pump_error .vip-pump_fill rect {
+    fill: var(--clr-error);
+}
+
+
+
+.vip-pump.vip-pump_noactive .vip-pump_stroke path,
+.vip-pump.vip-pump_noactive .vip-pump_stroke rect {
+    stroke: var(--clr-noactive);
+}
+
+.vip-pump.vip-pump_noactive .vip-pump_fill path,
+.vip-pump.vip-pump_noactive .vip-pump_fill rect {
+    fill: var(--clr-noactive);
+}
+
+/* THERMOSTAT */
+
+.vip-thermostat.vip-thermostat_error rect {
+    stroke: var(--clr-error);
+}
+
+.vip-thermostat.vip-thermostat_error path {
+    fill: var(--clr-error);
+}
+
+
+/* LEAK */
+
+.vip-leak_error path {
+    fill: var(--clr-error);
+}
+
+.vip-leak_error .vip-ls_border {
+    stroke: var(--clr-error);
 }
