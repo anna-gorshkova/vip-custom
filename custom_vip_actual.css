@@ -198,7 +198,7 @@
     justify-content: center;
 }
 
-/*********** Label for value withh params (ventilation dashboard) ************/
+/*********** Label for value with params (ventilation dashboard) ************/
 
 /* styles for container */
 .vip-label-value {
@@ -215,7 +215,7 @@
     justify-content: center;
     align-items: center;
 
-    min-width: 62px;
+    min-width: 66px;
     height: 20px;
 
     padding: 2px 8px;
@@ -365,7 +365,7 @@
 
 /* styles for element */
  .vip-input input.agg-input {
-	width: 196px;
+	width: 185px;
 	height: 32px;
 	background-color: #101011;
 	border: 1px solid #3C3E42;
@@ -398,7 +398,7 @@
 /* styles for element */
 .vip-select-list .agg-select {
 
-    min-width: 160px;
+    min-width: 130px;
     height: 32px;
 
     font-size: 14px;
